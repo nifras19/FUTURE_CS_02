@@ -1,0 +1,45 @@
+{
+  "type": "object",
+  "properties": {
+    "sender": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "header": {
+      "type": "string"
+    },
+    "risk_level": {
+      "type": "string",
+      "enum": [
+        "SAFE",
+        "SUSPICIOUS",
+        "PHISHING"
+      ]
+    },
+    "indicators": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "explanation": {
+      "type": "string"
+    },
+    "recommended_action": {
+      "type": "string"
+    },
+    "score": {
+      "type": "number"
+    }
+  },
+  "required": [],
+  "name": "EmailAnalysis"
+}
